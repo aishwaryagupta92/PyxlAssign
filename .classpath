@@ -49,6 +49,11 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/2.7.0/80ac065b5c519e434a237b7f3172d0f9ed9f4e84/spring-boot-starter-security-2.7.0-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/2.7.0/c01eccb2ceab6f46ca48c1705495070eefe967f4/spring-boot-starter-security-2.7.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.7.0/f971cca82b5c54e549ce6ff2b3f47a83676e6050/spring-boot-starter-web-2.7.0-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.7.0/7bf2381d030023970b5375c1090545e480467aa1/spring-boot-starter-web-2.7.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -129,6 +134,16 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.1/3ac3bf514709f90107f31d653aa92776cba97f/spring-security-config-5.7.1-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.1/19fb622cc15f62b14afe286b5fc37c23b26ea242/spring-security-config-5.7.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.1/c80f768a854c473c4d2cbb69a15985b5b9f18256/spring-security-web-5.7.1-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.1/a6f28f69c5def01ec3c3f660db6b0fc076d69846/spring-security-web-5.7.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.7.0/14c718a445c775bb4caffd383b7ace7ea8eef54c/spring-data-jpa-2.7.0-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.7.0/f82986cdf2beda49b0bbb28a880ca644a1eb6c42/spring-data-jpa-2.7.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -139,7 +154,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.20/1ba757a7353b142210454515a27f6bbc460058ad/spring-web-5.3.20-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.20/3c2fe9363760d62d5b7c9f087bb4255e3377a0b2/spring-web-5.3.20.jar">
+	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.1/c5ca609ecbbfa1cad607b19e5bc29be3d3fa7244/spring-security-core-5.7.1-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.7.1/7e98028d3b1afab1fc9e24006d0a95ea08304281/spring-security-core-5.7.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -150,6 +165,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.20/621e2b6b9f352459b50d862b82268d79f94250e1/spring-aop-5.3.20-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.20/c82f17997ab18ecafa8d08ce34a7c7aa4a04ef9e/spring-aop-5.3.20.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.20/1ba757a7353b142210454515a27f6bbc460058ad/spring-web-5.3.20-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.20/3c2fe9363760d62d5b7c9f087bb4255e3377a0b2/spring-web-5.3.20.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -335,6 +355,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.2/91a89f75de4f567c38dc7ec9f83f2a1afd2c2915/log4j-api-2.17.2-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.2/f42d6afa111b4dec5d2aea0fe2197240749a4ea6/log4j-api-2.17.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/5.7.1/249f84ee22116d3df37bc50ada715708d479a59b/spring-security-crypto-5.7.1-sources.jar" kind="lib" path="/Users/Aishwarya.Gupta/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/5.7.1/e036d3deb1b1fba2b9881613f0e43f69ccd23ece/spring-security-crypto-5.7.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

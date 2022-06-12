@@ -1,29 +1,37 @@
 com/poincare/pyxl/cc/app/launcher/UserResource.java
  com.poincare.pyxl.cc.app.launcher.UserResource
-com/poincare/pyxl/cc/app/request/UpdateUserChoiceRequest.java
- com.poincare.pyxl.cc.app.request.UpdateUserChoiceRequest
+com/poincare/pyxl/cc/app/launcher/SecurityConfig.java
+ com.poincare.pyxl.cc.app.launcher.SecurityConfig
 com/poincare/pyxl/cc/app/launcher/PyxlTimeZoneResource.java
  com.poincare.pyxl.cc.app.launcher.PyxlTimeZoneResource
+com/poincare/pyxl/cc/app/request/GenericUserChoiceRequest.java
+ com.poincare.pyxl.cc.app.request.GenericUserChoiceRequest
 com/poincare/pyxl/cc/app/response/ToggleTZResponse.java
  com.poincare.pyxl.cc.app.response.ToggleTZResponse
+com/poincare/pyxl/cc/app/launcher/CustomUserDetails.java
+ com.poincare.pyxl.cc.app.launcher.CustomUserDetails
 com/poincare/pyxl/cc/app/launcher/PyxlTimeZone.java
  com.poincare.pyxl.cc.app.launcher.PyxlTimeZone
+com/poincare/pyxl/cc/app/launcher/Role.java
+ com.poincare.pyxl.cc.app.launcher.Role
 com/poincare/pyxl/cc/app/launcher/UserChoiceResource.java
  com.poincare.pyxl.cc.app.launcher.UserChoiceResource
+com/poincare/pyxl/cc/app/launcher/CustomUDService.java
+ com.poincare.pyxl.cc.app.launcher.CustomUDService
 com/poincare/pyxl/cc/app/request/ToggleTZRequest.java
  com.poincare.pyxl.cc.app.request.ToggleTZRequest
 com/poincare/pyxl/cc/app/launcher/UserDao.java
  com.poincare.pyxl.cc.app.launcher.UserDao
 com/poincare/pyxl/cc/app/launcher/User.java
  com.poincare.pyxl.cc.app.launcher.User
+com/poincare/pyxl/cc/app/response/GetAllUserChoiceResponse.java
+ com.poincare.pyxl.cc.app.response.GetAllUserChoiceResponse
 com/poincare/pyxl/cc/app/launcher/Status.java
  com.poincare.pyxl.cc.app.launcher.Status
 com/poincare/pyxl/cc/app/request/AddUserRequest.java
  com.poincare.pyxl.cc.app.request.AddUserRequest
-com/poincare/pyxl/cc/app/response/AddUserChoiceResponse.java
- com.poincare.pyxl.cc.app.response.AddUserChoiceResponse
-com/poincare/pyxl/cc/app/request/AddUserChoiceRequest.java
- com.poincare.pyxl.cc.app.request.AddUserChoiceRequest
+com/poincare/pyxl/cc/app/response/GenericUserChoiceResponse.java
+ com.poincare.pyxl.cc.app.response.GenericUserChoiceResponse
 com/poincare/pyxl/cc/app/launcher/Launcher.java
  com.poincare.pyxl.cc.app.launcher.Launcher
 com/poincare/pyxl/cc/app/launcher/UserChoice.java
@@ -32,7 +40,5 @@ com/poincare/pyxl/cc/app/launcher/PyxlTimeZoneDao.java
  com.poincare.pyxl.cc.app.launcher.PyxlTimeZoneDao
 com/poincare/pyxl/cc/app/launcher/UserChoiceDao.java
  com.poincare.pyxl.cc.app.launcher.UserChoiceDao
-com/poincare/pyxl/cc/app/response/UpdateUserChoiceResponse.java
- com.poincare.pyxl.cc.app.response.UpdateUserChoiceResponse
 com/poincare/pyxl/cc/app/request/GetUserRequest.java
  com.poincare.pyxl.cc.app.request.GetUserRequest

@@ -13,6 +13,8 @@ import javax.persistence.Id;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class User {
 
@@ -23,8 +25,14 @@ public class User {
 	@Column(unique = true)
 	private String emailId;
 
+	@JsonIgnore
+	private String password;
+
 	@Enumerated(EnumType.STRING)
 	private Status status;
+
+	@Enumerated(EnumType.STRING)
+	private Role role;
 
 	@CreationTimestamp
 	private LocalDateTime createdAt;
@@ -34,8 +42,10 @@ public class User {
 	public User() {
 	}
 
-	public User(String emailId) {
+	public User(String emailId, String password, Role role) {
 		this.emailId = emailId;
+		this.password = password;
+		this.role = role;
 		this.status = Status.ACTIVE;
 	}
 
@@ -55,12 +65,28 @@ public class User {
 		this.emailId = emailId;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public Status getStatus() {
 		return status;
 	}
 
 	public void setStatus(Status status) {
 		this.status = status;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
 	public LocalDateTime getCreatedAt() {

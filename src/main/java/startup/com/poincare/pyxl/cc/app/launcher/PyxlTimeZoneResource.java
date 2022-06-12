@@ -32,7 +32,7 @@ public class PyxlTimeZoneResource {
 	@Autowired
 	private UserChoiceDao userChoiceDao;
 
-	@GetMapping(path = "/tz/spawn", produces = "application/json")
+	@GetMapping(path = "/admin/spawntzs", produces = "application/json")
 	public @ResponseBody List<PyxlTimeZone> spawn() {
 		for (String zone : ZoneId.SHORT_IDS.keySet().stream().collect(Collectors.toCollection(TreeSet::new))) {
 			PyxlTimeZone pyxlTZ = new PyxlTimeZone();
@@ -45,12 +45,12 @@ public class PyxlTimeZoneResource {
 		return StreamSupport.stream(iter.spliterator(), false).collect(Collectors.toList());
 	}
 
-	@GetMapping(path = "/tz/getAll", produces = "application/json")
+	@GetMapping(path = "/user/getalltzs", produces = "application/json")
 	public @ResponseBody List<PyxlTimeZone> getAllTZs() {
 		return StreamSupport.stream(pyxlTimeZoneDao.findAll().spliterator(), false).collect(Collectors.toList());
 	}
 
-	@PostMapping(path = "/tz/toggle")
+	@PostMapping(path = "/admin/toggletz", produces = "application/json")
 	@Transactional
 	public @ResponseBody ToggleTZResponse toggle(@RequestBody ToggleTZRequest request) {
 		ToggleTZResponse response = new ToggleTZResponse();

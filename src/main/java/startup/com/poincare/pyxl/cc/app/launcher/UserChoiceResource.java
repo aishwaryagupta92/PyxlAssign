@@ -32,7 +32,7 @@ public class UserChoiceResource {
 	@Autowired
 	private PyxlTimeZoneDao pyxlTimeZoneDao;
 
-	@GetMapping(path = "/userchoice/get")
+	@GetMapping(path = "/user/getuserchoicebyid")
 	public @ResponseBody GenericUserChoiceResponse getUserChoice(@RequestParam Long id) {
 		GenericUserChoiceResponse response = new GenericUserChoiceResponse();
 		if (id == null) {
@@ -51,7 +51,7 @@ public class UserChoiceResource {
 		}
 	}
 
-	@GetMapping(path = "/userchoice/getbyuserid")
+	@GetMapping(path = "/user/getuserchoicebyuserid")
 	public @ResponseBody GetAllUserChoiceResponse getUserChoiceByUserId(@RequestParam Long userId) {
 		GetAllUserChoiceResponse response = new GetAllUserChoiceResponse();
 		if (userId == null) {
@@ -73,7 +73,7 @@ public class UserChoiceResource {
 	/*
 	 * failfast
 	 */
-	@PostMapping(path = "/userchoice/add", produces = "application/json")
+	@PostMapping(path = "/user/adduserchoice", produces = "application/json")
 	public @ResponseBody GenericUserChoiceResponse addUserChoice(@RequestBody GenericUserChoiceRequest request) {
 		GenericUserChoiceResponse response = new GenericUserChoiceResponse();
 
@@ -123,7 +123,7 @@ public class UserChoiceResource {
 	/**
 	 * toggles all user's choices OR all that have the particular tz
 	 */
-	@PostMapping(path = "/userchoice/toggle", produces = "application/json")
+	@PostMapping(path = "/admin/toggleuserchoices", produces = "application/json")
 	public @ResponseBody GenericUserChoiceResponse toggleUserChoices(@RequestBody GenericUserChoiceRequest request) {
 		GenericUserChoiceResponse response = new GenericUserChoiceResponse();
 
@@ -138,7 +138,7 @@ public class UserChoiceResource {
 
 		Optional<User> user = userDao.findById(request.getUserId());
 		Optional<PyxlTimeZone> pyxlTimeZone = pyxlTimeZoneDao.findById(request.getTzId());
-		if (user.isEmpty() || pyxlTimeZone.isPresent()) {
+		if (!user.isPresent() || pyxlTimeZone.isPresent()) {
 			if (Status.ACTIVE.equals(pyxlTimeZone.get().getStatus())) {
 				List<UserChoice> userChoices = userChoiceDao.findByTzId(request.getTzId());
 				userChoices.stream().forEach(x -> x.setStatus(request.getStatus()));
@@ -149,7 +149,7 @@ public class UserChoiceResource {
 				response.setSuccess(false);
 				return response;
 			}
-		} else if (user.isPresent() || pyxlTimeZone.isEmpty()) {
+		} else if (user.isPresent() || !pyxlTimeZone.isPresent()) {
 			List<UserChoice> userChoices = userChoiceDao.findByUserId(request.getUserId());
 			userChoices.stream().forEach(x -> x.setStatus(request.getStatus()));
 			userChoiceDao.saveAll(userChoices);

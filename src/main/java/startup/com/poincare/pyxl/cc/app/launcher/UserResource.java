@@ -29,17 +29,19 @@ public class UserResource {
 		return LocalDateTime.now().toString();
 	}
 
-	@PostMapping(path = "/user/get", produces = "application/json")
+	@PostMapping(path = "/get", produces = "application/json")
 	public @ResponseBody User getUser(@RequestBody GetUserRequest request) {
 		User user = userDao.findByEmailId(request.getEmailId());
 		return user;
 	}
 
-	@PostMapping(path = "/user/add", produces = "application/json")
+	@PostMapping(path = "/admin/add", produces = "application/json")
 	public @ResponseBody User addUser(@RequestBody AddUserRequest request) {
-		if (Strings.isBlank(request.getEmailId())) {
+		if (Strings.isBlank(request.getEmailId()) || Strings.isBlank(request.getPassword())
+				|| request.getRole() == null) {
+			logger.debug("Some/All req. params null");
 			return null;
 		}
-		return userDao.save(new User(request.getEmailId()));
+		return userDao.save(new User(request.getEmailId(), request.getPassword(), request.getRole()));
 	}
 }
